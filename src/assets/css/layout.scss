@@ -1,0 +1,12 @@
+.layout-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.layout-header {
+    height: 48px;
+}
+.layout-route {
+    flex: 1;
+}
