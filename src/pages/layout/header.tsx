@@ -1,7 +1,15 @@
+import { MenuOutlined, SettingOutlined } from '@ant-design/icons'
 
 const LayoutHeader = () => {
     return (
-        <div>我来组成头部</div>
+        <>
+        <div className="layout-header-left">
+            <MenuOutlined />
+        </div>
+        <div className="layout-header-right">
+            <SettingOutlined />
+        </div>
+        </>
     )
 }
 
