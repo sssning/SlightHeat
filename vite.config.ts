@@ -23,5 +23,12 @@ export default defineConfig({
     open: true,
     host: true,
     port: 8090,
+    proxy: {
+      '/api/wallpaper': {
+        target: 'https://wallpaper.leex.me',
+        changeOrigin: true,
+        rewrite: path => path.replace(RegExp('/api/wallpaper'), '/api')
+      }
+    }
   },
 });

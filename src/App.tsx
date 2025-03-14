@@ -1,9 +1,10 @@
+import { useEffect, useState } from 'react';
+import Wallpapaer from './components/Wallpapaer'
 
 function App() {
 
   return (
     <>
-      <div className='qq'>SlightHeat</div>
     </>
   )
 }

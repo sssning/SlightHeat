@@ -4,10 +4,10 @@ const LayoutHeader = () => {
     return (
         <>
         <div className="layout-header-left">
-            <MenuOutlined />
+            <MenuOutlined style={{color: '#fff'}} />
         </div>
         <div className="layout-header-right">
-            <SettingOutlined />
+            <SettingOutlined style={{color: '#fff'}} />
         </div>
         </>
     )
