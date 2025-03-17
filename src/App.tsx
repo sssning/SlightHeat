@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
-import Wallpapaer from './components/Wallpapaer'
+import Search from './components/Search'
+import './assets/css/app.scss'
 
 function App() {
 
   return (
-    <>
-    </>
+    <div className='app-page'>
+      <Search />
+    </div>
   )
 }
 

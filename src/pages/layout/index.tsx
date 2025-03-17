@@ -4,10 +4,11 @@ import '@/assets/css/layout.scss'
 import LayoutHeader from './header'
 import LayoutFooter from './footer'
 import Wallpapaer from '../../components/Wallpapaer'
+import { Suspense } from 'react';
 
 const Layout = () => {
   return (
-    <>
+    <Suspense >
       <Wallpapaer />
       <div className='layout-content'>
         <div className="layout-header">
@@ -20,7 +21,7 @@ const Layout = () => {
           <LayoutFooter />
         </div>
       </div>
-    </>
+    </Suspense>
   )
 }
 

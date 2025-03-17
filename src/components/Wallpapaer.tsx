@@ -22,8 +22,8 @@ const Wallpapaer = () => {
         <>
             { url && (
                 <div className='wallpapaer'>
-                <img src={url} alt="background" />
-                <div className='gray'></div>
+                    <img src={url} alt="background" />
+                    <div className='gray'></div>
                 </div>
             )}
         </>
