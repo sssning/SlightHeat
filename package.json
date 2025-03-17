@@ -1,5 +1,5 @@
 {
-  "name": "SlightHeat",
+  "name": "slight_heat",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,8 @@
     "axios": "^1.8.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0"
+    "react-router-dom": "^7.3.0",
+    "vite-plugin-svg-icons": "^2.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
