@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Search from './components/Search'
 import './assets/css/app.scss'
 

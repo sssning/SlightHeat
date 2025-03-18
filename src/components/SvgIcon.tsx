@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface SvgIconProps {
   name: string,
   prefix?: string,

@@ -1,9 +1,12 @@
+$searchHeight: 42px;
+
 .search-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 42px;
+    position: relative;
+    height: $searchHeight;
     width: 50vw;
     border-radius: 30px;
     color: #fff;
@@ -27,6 +30,39 @@
         background: none;
         font-size: 16px;
         color: #fff;
+    }
+    .search-left, .search-right {
+        height: 16px;
+        cursor: pointer;
+    }
+    .search-menus {
+        position: absolute;
+        top: calc($searchHeight + 12px);
+        left: 0;
+        width: 100%;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+        gap: 10px;
+        background-color: #ffffff30;
+        border-radius: 10px;
+        &-item {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            padding: 0 16px;
+            grid-column: span 1 / span 1;
+            border-radius: 10px;
+            background-color: #ffffff30;
+            transition: background-color .3s, box-shadow .3s;
+            &-icon {
+                margin-right: 12px;
+            }
+        }
     }
 }
 
