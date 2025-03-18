@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getWallpaper } from '../api/setting';
+import { getWallpaper } from '../api/index';
 
 const Wallpapaer = () => {
     const [url, setUrl] = useState<string>('');

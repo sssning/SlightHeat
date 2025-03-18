@@ -3,7 +3,8 @@ import { useRef, useState } from 'react';
 import '../assets/css/search.scss';
 import { SearchOutlined } from '@ant-design/icons';
 import SvgIcon from './SvgIcon';
-import { searchMenus, serachDataKey } from '../utils/const'
+import { searchMenus, serachDataKey } from '../utils/const';
+import classnames from 'classnames';
 
 const serachData = localStorage.getItem(serachDataKey);
 const defaultData = serachData ? JSON.parse(serachData) : searchMenus[0];
@@ -56,7 +57,7 @@ const Search = () => {
                         { 
                             searchMenus.map((item) => {
                                 return (
-                                    <div className='search-menus-item' key={item.icon} onClick={() => onClickItem(item)}>
+                                    <div className={classnames('search-menus-item', { active: active.icon === item.icon })} key={item.icon} onClick={() => onClickItem(item)}>
                                         <div className='search-menus-item-icon'>
                                             <SvgIcon name={item.icon} /> 
                                         </div>

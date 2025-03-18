@@ -7,7 +7,7 @@ $searchHeight: 42px;
     justify-content: space-between;
     position: relative;
     height: $searchHeight;
-    width: 50vw;
+    width: 45vw;
     border-radius: 30px;
     color: #fff;
     background-color: #00000040;
@@ -62,6 +62,12 @@ $searchHeight: 42px;
             &-icon {
                 margin-right: 12px;
             }
+            &:hover {
+                background-color: #ffffff70;
+            }
+        }
+        .active {
+            background-color: #ffffff70;
         }
     }
 }
