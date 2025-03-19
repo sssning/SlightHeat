@@ -45,11 +45,11 @@ const Search = () => {
     return (
         <div className="search-container">
             <div className="search-left" onClick={onClickIcon}>
-                <SvgIcon name={active.icon} /> 
+                <SvgIcon name={active.icon} style={{ width: 20, height: 20 }} /> 
             </div>
             <input ref={inputRef} placeholder='随便搜点' type="text" onChange={e => setValue(e.target.value)} onKeyDown={e => e.key === "Enter" && onSearch()} />
             <div className="search-right">
-                <SearchOutlined onClick={onSearch} />
+                <SearchOutlined onClick={onSearch} style={{ fontSize: 20 }} />
             </div>
             {
                 showMenus && (
@@ -59,7 +59,7 @@ const Search = () => {
                                 return (
                                     <div className={classnames('search-menus-item', { active: active.icon === item.icon })} key={item.icon} onClick={() => onClickItem(item)}>
                                         <div className='search-menus-item-icon'>
-                                            <SvgIcon name={item.icon} /> 
+                                            <SvgIcon name={item.icon} style={{ width: 18, height: 18 }} /> 
                                         </div>
                                         <div className='search-menus-item-name'>{item.name}</div>
                                     </div>

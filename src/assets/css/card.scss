@@ -1,0 +1,15 @@
+.card-box {
+    position: fixed;
+    top: 88px;
+    left: 5%;
+    width: 90%;
+    height: 86%;
+    max-width: 1200px;
+    background-color: #ffffff30;
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    z-index: 2;
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: opacity 0.3s, transform 0.3s, margin-top 0.3s, height 0.3s;
+}
