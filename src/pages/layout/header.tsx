@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import { createPortal  } from 'react-dom';
 import { MenuOutlined, SettingOutlined } from '@ant-design/icons';
 import Navigation from '../../components/Navigation'
+import { useStore } from '../../store/index'
 
 const LayoutHeader = () => {
     const [showNavigation, setShowNavigation] = useState<boolean>(false);
 
-    const onMenuClick = () => {
+    const onMenuClick = async () => {
         setShowNavigation(v => !v);
     }
-
     return (
         <>
             <div className="layout-header-left">
@@ -18,12 +17,6 @@ const LayoutHeader = () => {
             <div className="layout-header-right">
                 <SettingOutlined style={{color: '#fff'}} />
             </div>
-            {   showNavigation &&
-                createPortal(
-                    <Navigation/>,
-                    document.body
-                )
-            }
         </>
     )
 }
